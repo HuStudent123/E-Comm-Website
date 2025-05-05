@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Colorful E-Commerce</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Welcome to ColorCart</h1>
+    <p>Your One-Stop Online Shop</p>
+  </header>
+
+  <section class="intro">
+    <h2>What is an E-Commerce Website?</h2>
+    <p>
+      An e-commerce website is a platform that allows businesses and individuals to buy and sell goods and services over the internet. 
+      
+    </p>
+    <img src="banner.jpg" alt="product display" style="width:100% ; max-height: 200px; vertical-align:middle; margin: 0 10px;">
+    <p>
+      Our e-commerce website  demonstrates how modern online stores work- for dynamic listings to interactive cart functionality
+    </p>
+  
+    <img src="banner.jpeg"  alt="welcome to our e-commerce site" class="banner">
+  </section>
+
+  <section class="products" id="products">
+    <h2>Featured Products</h2>
+      <input type="text" id="search-bar" placeholder="Search products..." onkeyup="filterProducts()"/>
+    <div class="category" data-category="Electronics">
+   <h3>Electronics</h3>
+    <div class="product" onclick="addToCart('Smart Watch')">
+     <img src="smart watch.jpg" alt="smart watch"> &nbsp&nbsp&nbsp    
+     Smart Watch - $50</div>
+    <div class="product" onclick="addToCart('Laptop')"> 
+     <img src="laptop.jpg" alt="laptop">   &nbsp&nbsp&nbsp         
+    Laptop - $800</div>
+    <div class="product" onclick="addToCart('Phone')"> 
+    <img src="phone.jpg" alt="phone">  &nbsp&nbsp&nbsp   Phone - $400</div>
+   </div>
+   <div class="category" data-category="Beauty">
+   <h3>Beauty</h3>
+    <div class="product" onclick="addToCart('Lipstick')">
+     <img src="lipstick.jpg" alt="lipstick"> &nbsp&nbsp&nbsp  Lipstick - $20</div>
+    <div class="product" onclick="addToCart('Shampoo')">
+     <img src="shampoo.jpg" alt="shampoo">  &nbsp&nbsp&nbsp  Shampoo - $10</div>
+      <div class="product" onclick="addToCart('Wigs')">
+      <img src="wig.jpg" alt="wigs">  &nbsp&nbsp&nbspWigs - $60</div>
+     </div>
+     <div class="category" data-category="Groceries">
+   <h3>Groceries</h3>
+    <div class="product" onclick="addToCart('Apples')">
+    <img src="apples.jpg" alt="apples">   &nbsp&nbsp&nbsp  Apples - $5</div>
+  <div class="product" onclick="addToCart('Juice')">
+   <img src="juice.jpg" alt="juice">  &nbsp&nbsp&nbsp   Juice - $3</div>
+  </div>
+    <div class="category" data-category="Fashion">
+   <h3>Fashion</h3>
+    <div class="product" onclick="addToCart('Sneakers')">
+   <img src="sneakers.jpg" alt="sneakers">  &nbsp&nbsp&nbsp      Sneakers - $45</div>
+   <div class="product" onclick="addToCart('T-shirt')">
+    <img src="t-shirt.jpg" alt="t-shirt"> &nbsp&nbsp&nbsp       T-shirt - $15</div>
+   </div>
+  </section>
+
+  <section class="form-section">
+    <h2>Place Your Order</h2>
+    <form id="order-form">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="text" placeholder="Shipping Address" required /><br>
+      <button type="submit">Submit Order</button>
+    </form>
+  </section>
+
+  <section class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+  </section>
+
+  <footer>
+    <div class="about">
+      <h3>About Us</h3>
+      <p>ColorCart is your go-to destination for fast, affordable, and quality shopping online.</p>
+    </div>  <div class="privacy">
+      <h3>Privacy Policy</h3>
+      <p>We respect your privacy. Your data is used only for order processing and secure payment.</p>
+    </div>
+    <div class="copyright">
+    <p>ColorCart  &copy; 2025</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

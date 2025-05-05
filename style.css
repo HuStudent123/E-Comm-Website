@@ -1,0 +1,103 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f0f8ff;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.intro, .products, .form-section, .cart, footer {
+  padding: 20px;
+  margin: 10px;
+}
+
+.intro img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+
+.product {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 5px 0;
+,  cursor: pointer;
+}
+
+.product:hover {
+  background: #e0f7fa;
+}
+
+form input, form button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+footer {
+  background: #333;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 10px;
+}
+.banner {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+#search-bar{
+padding: 12px 15px;
+margin: 20px 0;
+width: 100%;
+font-size: 16px;
+border: 1px solid #ccc;
+border-radius: 50px;
+outline: none;
+}
+input, button{
+display: block;
+width: 100%;
+padding: 8px;
+margin-top: 10px;
+box-sizing: border-box; 
+} 
+.category h3{
+margin-top: 20px;
+color: #444;
+}
+.product img{
+width: 70%;
+height: 150px;
+object-fit: cover;
+margin-bottom: 5px;
+border-radius: 5px;
+}
+cart li{
+background: #f9f9f0;
+padding: 10px;
+margin: 8px 0;
+border: 1px solid #ddd;
+border-radius: 5px;
+}
+
+
+
+
+
+
+
+
